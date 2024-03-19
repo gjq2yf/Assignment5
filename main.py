@@ -40,7 +40,7 @@ app.layout = html.Div(children=[
             min=df['year'].min(),
             max=df['year'].max(),
             value=[df['year'].min(), df['year'].max()],
-            marks={str(year): str(year) for year in range(df['year'].min(), df['year'].max() + 1, 10)},
+            marks={str(year): str(year) for year in range(df['year'].min(), df['year'].max() + 1, 15)},
             step=None
         )
     ], style={'width': '48%', 'float': 'right', 'display': 'inline-block'}),
